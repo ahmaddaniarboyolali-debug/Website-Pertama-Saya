@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contoh Website</title>
+  <style>
+    body {
+      background-color: #0A230A;
+      color: white;
+      font-weight: bolder;
+    }
+    .load {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100vw;
+      height: 100vh;
+      background-color: black;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 1;
+      transition: opacity 0.3s ease;
+    }
+    .load-invis {
+      opacity: 0;
+    }
+    .loader {
+      width: 20px;
+      height: 20px;
+      border: 9px solid Blue;
+      border-top: 9px solid navajowhite;
+      border-radius: 50%;
+      transition: all 0.3s ease;
+      animation: putar 1s linear infinite;
+    }
+    @keyframes putar {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+    
+    .main {
+      opacity: 0;
+    }
+    .main-vis {
+      opacity: 1;
+      z-index: 5;
+      transition: all 3s ease;
+    }
+  </style>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="load">
+    <div class="loader"></div>
+  </div>
+  <div class="main">
+    <center>
+      <h2>Contoh Website Keren</h2>
+      <button class="main-btn">Klik</button>
+    </center>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
