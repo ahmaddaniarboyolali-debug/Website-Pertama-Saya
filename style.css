@@ -1,0 +1,22 @@
+/* Style Css */ 
+
+.main-btn {
+  border: none;
+  width: 50px;
+  height: 35px;
+  box-shadow: 0 9px #999;
+  border-radius: 10px;
+  color: #fff;
+  background-color: #04AA41;
+}
+.main-btn:hover {
+  background-color: #eeA;
+}
+.main-btn:active {
+  background-color: #eeA;
+  box-shadow: 0 5px #999;
+  transform: translateY(4px);
+}
+h2:hover {
+  color: yellow;
+}
